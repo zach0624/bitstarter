@@ -57,68 +57,190 @@
         font-size: 18px;
         line-height: 24px;
       }
+      
+      /* Video pitch and Action */
+      .pitch {
+        padding: 2.5% 0%;
+      }
+      .order {
+        padding: 2% 0%;
+      }
+      .actions {
+        background-color: #343434;
+        padding: 3% 0%;
+      }
+      .video, .thermometer, .order, .social, .statistics {
+        text-align: center;
+      }
+      .statistics h3, .statistics p {
+        color: white;
+      }
 
+      /* Marketing Copy and Footer */
+      .copy {
+        padding-top: 2.5%;
+        padding-bottom: 2.5%;
+        text-align: justify;
+      }
+      .asset {
+        padding: 2.5% 0%;
+      }
+      .footer {
+        color: #ccccc;
+        text-align: center;
+      }
+      .footer p {
+        font-size: 11px;
+      }
+      .footer a {
+        color: #ccccff;
+      }
     </style>
   </head>
   <body>
-    <div class="container">
-      <div class="row navigation">
-	<div class="span2 logo">
-	  Logo
-	</div>
-	<div class="span6 blank">
-	  Blank
-	</div>
-	<div class="span4 about">
-	  About
-	</div>
-      </div>
-      <div class="row heading">
-	<div class="span12">
-	  <h1>Bitstarter Title</h1>
-	</div>
-      </div>
-      <div class="row subheading">
-	<div class="span12">
-	  <p class="lead">This is my first bitstarter project.</p>
-	</div>
-      </div>
-      <div class="row pitch">
-	<div class="span6 video">
-	  Video
-	</div>
-	<div class="span6">
-	  <div class="thermometer">
-	    Thermometer
-	  </div>
-	  <div class="order">
-	    Order
-	  </div>
-	  <div class="social">
-	    Social
+    <!--Navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+	<div class="container">
+	  <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+	    <span class="icon-bar"></span>
+	    <span class="icon-bar"></span>
+	    <span class="icon-bar"></span>
+	  </button>
+	  <a class="brand" href="#">Bitstarter</a>
+	  <div class="nav-collapse collapse">
+	    <ul class="nav">
+	      <li class="active"><a href="#">Home</a></li>
+	      <li><a href="#about">About</a></li>
+	      <li><a href="#contact">Contact</a></li>
+	    </ul>
 	  </div>
 	</div>
       </div>
-      <div class="row section1">
+    </div>
+
+    <!-- Using fluid and responsive bootstrap elements to provide a fluid design-->
+    <div clas="container">
+      <div class="row-fluid heading">
 	<div class="span12">
-	  Marketing Section 1
+	  <h1>Product</h1>
 	</div>
       </div>
-      <div class="row section2">
+      <div class="row-fluid subheading">
 	<div class="span12">
-	  Marketing Section 2
+	  <p class="lead">One sentence description.</p>
 	</div>
       </div>
-      <div class="row faq">
-	<div class="span12">
-	  FAQ
+      <div class="row-fluid pitch">
+	<div class="span5 offset1 video">
+	  <img class="img-polaroid" src="http://placehold.it/480x300">
+	</div>
+	
+	<!-- Actions div for stats, order and share buttons-->
+	<div class="span5 actions">
+	  <div class="span8 offset2">
+	    <div class="statistics">
+	      <div class="span4">
+		<div class="linediv-l">
+		  <h3>1000</h3> <p>backers</p>
+		</div>
+	      </div>
+	      <div class="span4">
+		<div class="linediv-c">
+		  <h3>$600</h3> <p> of $10k000</p>
+		</div>
+	      </div>
+	    </div>
+	  </div>
+	  <div class="span10 offset1">
+	    <!-- Bootstrap progress bar -->
+	    <div class="thermometer progress active">
+	      <div class="bar bar-success" style="width: 60%;"></div>
+	      <div class="bar bar-warning" style="width: 40%;"></div>
+	    </div>
+	  </div>
+	  <div class="span6 offset3 order">
+	    <!-- Standard Bootstrap button. -->
+	    <button class="btn btn-success btn-large">Preorder</button>
+	  </div>
+	  <div class="span8 offset2 social">
+	    <!-- Social media buttons -->
+	    <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
+	    <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
+	  </div>
 	</div>
       </div>
-      <div class="row footer">
+       
+      <!-- Marketing Section -->
+      <div class="row-fluid section1">
+	<div class="span5 offset1 asset">
+	  <img class="img-polaroid" src="http://placehold.it/480x300">
+	</div>
+	<div class="span5 copy">
+	  <p>
+	    Excepteur keffiyeh typewriter biodiesel photo booth plaid. Pour-over Portland deep v consequat, small batch brunch non veniam hella salvia occupy blog. Squid consequat 90's vero laboris flexitarian. Trust fund chillwave aliquip swag umami 8-bit. Gastropub ethical retro Banksy, helvetica fingerstache banjo bespoke anim cray gluten-free beard. Et stumptown DIY cillum, blog leggings skateboard Etsy. Vice narwhal gluten-free bitters, pop-up velit pariatur odio laboris cillum.
+
+Lomo keffiyeh ennui YOLO enim, vegan pitchfork nesciunt duis disrupt ethical High Life id. Next level magna butcher, squid id Brooklyn cupidatat sapiente ethical try-hard semiotics adipisicing messenger bag Echo Park. Carles dreamcatcher raw denim tattooed, labore nostrud enim swag viral Echo Park. High Life bitters 90's anim, Truffaut tote bag authentic. Readymade minim flexitarian ethnic, selvage fixie sriracha velit chambray blue bottle gastropub sed retro. Ea cornhole vero, do master cleanse beard in reprehenderit raw denim YOLO art party. Voluptate odio +1, dreamcatcher ugh four loko disrupt irony blue bottle esse Austin street art.
+	  </p>
+	</div>
+      </div>
+
+      <div class="row-fluid section2">
+	<div class="span5 offset1 copy copy-right">
+	  <p>
+	    Typewriter ad aute, Odd Future incididunt american apparel placeat. Pitchfork Schlitz single-origin coffee iPhone cliche skateboard, blue bottle seitan. Twee street art put a bird on it, dolore nisi in butcher. Fashion axe dreamcatcher ad, before they sold out quis messenger bag vero duis pariatur wayfarers Etsy irure tofu cornhole polaroid. +1 lomo mustache dolor tofu duis wolf, try-hard tattooed mlkshk gluten-free ea 8-bit locavore fixie. Pinterest esse accusamus blog authentic, nesciunt lomo leggings church-key freegan Vice try-hard laboris. Salvia cliche meh deep v.
+
+Quis farm-to-table quinoa, assumenda dreamcatcher tumblr kale chips id iPhone meggings. Sriracha messenger bag ullamco, viral ea freegan Pinterest sustainable keffiyeh ethical chillwave twee voluptate leggings butcher. Portland 3 wolf moon keffiyeh pop-up cray. Retro biodiesel sriracha pug, enim reprehenderit fingerstache flannel literally farm-to-table Wes Anderson excepteur VHS cliche. Gentrify non intelligentsia dolor, mlkshk McSweeney's Schlitz. Cupidatat minim photo booth adipisicing anim. Qui Schlitz fixie, Terry Richardson laboris american apparel polaroid laborum tousled leggings locavore next level ugh lo-fi.
+
+Selvage sapiente excepteur authentic butcher assumenda, Bushwick nulla. Banjo authentic enim flexitarian, ethnic gentrify qui mlkshk single-origin coffee odio placeat nesciunt veniam whatever fashion axe. Four loko tumblr iPhone biodiesel, twee sed flannel selfies magna banjo irure fashion axe labore farm-to-table wayfarers. Echo Park kogi 90's, mollit exercitation nisi authentic hashtag magna non McSweeney's. Fap sapiente dolore skateboard, occaecat raw denim selvage art party bitters aesthetic pug literally. Thundercats retro four loko, lomo dolore aliqua sriracha kitsch master cleanse Pinterest tofu semiotics messenger bag. Delectus adipisicing mlkshk Neutra twee irure et.
+
+Ullamco vero chillwave, quis hoodie Banksy Tonx Brooklyn lomo blue bottle mollit ugh excepteur irure. Fingerstache organic flannel YOLO, fashion axe fixie irure banjo lomo non consectetur chambray. Accusamus aute in mumblecore duis. Aliqua accusamus shabby chic, Marfa umami exercitation before they sold out forage food truck sriracha selvage freegan bicycle rights Etsy nihil. Velit Pinterest ennui ex Carles kitsch. Pug cornhole irure et voluptate next level selvage wolf, bespoke letterpress meh keffiyeh aliquip lo-fi meggings. McSweeney's post-ironic laborum, meggings put a bird on it assumenda laboris reprehenderit ennui freegan salvia lomo banjo umami selvage.
+	    </p>
+	  </div>
+	<div class="span5 asset">
+	  <img class="img-polaroid" src="http://placehold.it/480x300">
+	</div>
+      </div>
+      
+      <!-- Faq-->
+      <div class="row-fuid faq">
+	<div class="span10 offset1">
+	  <h3>FAQ</h3>
+	  <div class="accordion" id="accordian2">
+	    <div class="accordion-group">
+	      <div class="accordian-heading">
+		<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+		  What does FAQ stand for?
+		</a>
+              </div>
+	      <div id="collapseOne" class="accordion-body collapse">
+		<div class="accordion-inner">
+		  Frequently Asked Question
+		</div>
+              </div>
+	    </div>
+	    <div class="accordion-group">
+	      <div class="accordion-heading">
+		<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+		  What's a Frequently Asked Question?
+		</a>
+	      </div>
+	      <div id="collapseTwo" class="accordion-body collapse">
+		<div class="accordion-inner">
+		  A qeustion which is commonly asked by users.
+		</div>
+	      </div>
+	    </div>
+	  </div>
+        </div>
+
+      </div>
+      <div class="row-fluid footer">
 	<div class="span12">
-	  Footer
+	  <p> This work is licensed under the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC By-SA 3.0</a></p>
 	</div>
       </div>
     </div>
   </body>
 </html>
+
